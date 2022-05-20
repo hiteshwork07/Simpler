@@ -1,0 +1,100 @@
+import { StyleSheet } from 'react-native';
+import { heightPercentageToDP as hp , widthPercentageToDP as wp} from 'react-native-responsive-screen';
+import { texts } from '../../../utils/Resource';
+
+const styles = StyleSheet.create({
+    mainContainer: { 
+        flex:1,
+    },
+    logoImageContainer:{
+        alignSelf:"center",
+        marginTop:hp('5%'),
+        justifyContent:"center",
+        alignItems:"center",
+        height:hp('16%'),
+        width:wp('90%'),
+    },
+    logoImage:{
+        height:hp('14%'),
+        width:wp('50%')
+    },
+    introTextContainer:{
+        alignSelf:"center",
+        marginTop:hp('2%'),
+        justifyContent:"center",
+        alignItems:"center",
+        height:hp('14%'),
+        width:wp('90%'),
+    },
+    introTextMain:{
+        ...texts.xlargeBold,
+        letterSpacing:wp('0.4%')
+    },
+    introTextSub:{
+        marginTop:hp('1%'),
+        ...texts.large,
+        letterSpacing:wp('0.4%')
+    },
+    textInputContainer:{
+        marginTop:hp('1.3%'),
+        justifyContent:"center",
+        alignItems:"flex-start",
+        alignSelf:"center",
+        height:hp('12%'),
+        width:wp('80%'),
+        borderRadius:hp('1.2%'),
+    },
+    textInputTitle:{
+        ...texts.regular,
+        letterSpacing:wp('0.4%')
+    },
+    textInput:{
+        flex:1,
+        paddingHorizontal:wp('1.2%'),
+        borderRadius:hp('1.2%'),
+        ...texts.regular
+    },
+    passwordTextInput:{
+        flex:1,
+        paddingHorizontal:wp('1.2%'),
+        borderBottomLeftRadius:hp('1.2%'),
+        borderTopLeftRadius:hp('1.2%'),
+        ...texts.regular
+    },
+    textInputHolder:{
+        marginTop:hp('1%'),
+        height:hp('6%'),
+        width:wp('80%'),
+        borderRadius:hp('1.2%'),
+    },
+    eyeHolder:{
+        height:hp('6%'),
+        width:wp('10%'),
+        justifyContent:"center",
+        alignItems:"center",
+        borderBottomRightRadius:hp('1.2%'),
+        borderTopRightRadius:hp('1.2%'),
+    },
+    passwordTextInputHolder:{
+        marginTop:hp('1%'),
+        height:hp('6%'),
+        width:wp('80%'),
+        flexDirection:"row",
+    },
+    loginButtonContainer:{
+        marginTop:hp('3%'),
+        alignSelf:"center",
+        justifyContent:"center",
+        alignItems:"center",
+        height:hp('6%'),
+        width:wp('80%'),
+        borderRadius:hp('1.2%')
+    },
+    loginButtonText:{
+        ...texts.large,
+        letterSpacing:wp('0.4%')
+    }
+
+});
+
+export default styles;
